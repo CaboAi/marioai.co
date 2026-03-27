@@ -693,10 +693,31 @@ export default function Portfolio() {
           <div className="divider"/>
         </div>
 
-        <div ref={ref("abouttext")} className={`fade-up ${isVis("abouttext") ? "vis" : ""}`} style={{ animationDelay: "0.15s" }}>
-          <p style={{ fontSize: 18, lineHeight: 1.8, color: "#444", marginBottom: 24 }}>{t.about.p1}</p>
-          <p style={{ fontSize: 16, lineHeight: 1.8, color: "#666", marginBottom: 24 }}>{t.about.p2}</p>
-          <p style={{ fontSize: 16, lineHeight: 1.8, color: "#666", fontStyle: "italic" }}>{t.about.p3}</p>
+        <div ref={ref("abouttext")} className={`fade-up ${isVis("abouttext") ? "vis" : ""}`} style={{
+          animationDelay: "0.15s",
+          display: "flex",
+          gap: 48,
+          alignItems: "flex-start",
+          flexWrap: "wrap"
+        }}>
+          <img
+            src="/images/mario.jpg"
+            alt="Mario Polanco"
+            style={{
+              width: 220,
+              height: 280,
+              objectFit: "cover",
+              objectPosition: "center top",
+              borderRadius: 4,
+              flexShrink: 0,
+              border: "1px solid #e8e6e0"
+            }}
+          />
+          <div style={{ flex: 1, minWidth: 280 }}>
+            <p style={{ fontSize: 18, lineHeight: 1.8, color: "#444", marginBottom: 24 }}>{t.about.p1}</p>
+            <p style={{ fontSize: 16, lineHeight: 1.8, color: "#666", marginBottom: 24 }}>{t.about.p2}</p>
+            <p style={{ fontSize: 16, lineHeight: 1.8, color: "#666", fontStyle: "italic" }}>{t.about.p3}</p>
+          </div>
         </div>
       </section>
 
