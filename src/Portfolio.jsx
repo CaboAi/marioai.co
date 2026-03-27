@@ -704,13 +704,12 @@ export default function Portfolio() {
             src="/images/mario.jpg"
             alt="Mario Polanco"
             style={{
-              width: 220,
-              height: 280,
+              width: 280,
+              aspectRatio: "3 / 4",
               objectFit: "cover",
-              objectPosition: "center top",
-              borderRadius: 4,
-              flexShrink: 0,
-              border: "1px solid #e8e6e0"
+              objectPosition: "center 20%",
+              borderRadius: 6,
+              flexShrink: 0
             }}
           />
           <div style={{ flex: 1, minWidth: 280 }}>
