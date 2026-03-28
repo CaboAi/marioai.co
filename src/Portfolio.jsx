@@ -20,7 +20,8 @@ const translations = {
       title: "Recent work",
       p1: { name: "EstudioCreativo", type: "Creative Agency Website", desc: "Full brand website with portfolio showcase and client intake automation." },
       p2: { name: "Los Cabos Rentals", type: "Rental Platform (SaaS)", desc: "Full-stack rental application with property listings, search, and waitlist management." },
-      p3: { name: "Manufacturing Automation", type: "Document Workflow", desc: "PDF-to-Excel data extraction system eliminating hours of manual data entry for a clothing manufacturer." }
+      p3: { name: "Manufacturing Automation", type: "Document Workflow", desc: "PDF-to-Excel data extraction system eliminating hours of manual data entry for a clothing manufacturer." },
+      p4: { name: "Liquid Lounge", type: "Mobile IV Therapy Website", desc: "Bilingual landing page with IV menu, WhatsApp booking integration, and service showcase for a mobile wellness brand in Los Cabos." }
     },
     about: {
       title: "About",
@@ -55,7 +56,8 @@ const translations = {
       title: "Proyectos recientes",
       p1: { name: "EstudioCreativo", type: "Sitio Web — Agencia Creativa", desc: "Sitio web completo con portafolio y automatización de captación de clientes." },
       p2: { name: "Los Cabos Rentals", type: "Plataforma de Rentas (SaaS)", desc: "Aplicación completa de rentas con listados de propiedades, búsqueda y gestión de lista de espera." },
-      p3: { name: "Automatización Manufacturera", type: "Flujo de Documentos", desc: "Sistema de extracción de datos PDF a Excel eliminando horas de captura manual para una empresa de manufactura textil." }
+      p3: { name: "Automatización Manufacturera", type: "Flujo de Documentos", desc: "Sistema de extracción de datos PDF a Excel eliminando horas de captura manual para una empresa de manufactura textil." },
+      p4: { name: "Liquid Lounge", type: "Sitio Web — Terapia IV Móvil", desc: "Landing page bilingüe con menú de IV, integración de reservas por WhatsApp y catálogo de servicios para una marca de bienestar móvil en Los Cabos." }
     },
     about: {
       title: "Sobre mí",
@@ -83,7 +85,8 @@ const serviceIcons = [
 const projectImages = [
   "/images/project-1.png", // EstudioCreativo
   "/images/project-2.png", // Los Cabos Rentals
-  null                      // Manufacturing — uses inline mockup
+  null,                     // Manufacturing — uses inline mockup
+  "/images/project-4.png"  // Liquid Lounge
 ];
 
 function ProjectPreview({ index }) {
@@ -128,12 +131,12 @@ function ProjectPreview({ index }) {
             color: "#999",
             fontFamily: "'DM Sans', sans-serif"
           }}>
-            {["estudiocreativo.ai", "caborentalapp.com", ""][index]}
+            {["estudiocreativo.ai", "caborentalapp.com", "", "liquidloungeiv.com"][index]}
           </div>
         </div>
         <img
           src={src}
-          alt={["EstudioCreativo website", "Los Cabos Rentals app", "Manufacturing automation"][index]}
+          alt={["EstudioCreativo website", "Los Cabos Rentals app", "Manufacturing automation", "Liquid Lounge website"][index]}
           onError={() => setImgError(true)}
           style={{
             width: "100%",
@@ -184,7 +187,7 @@ function ProjectPreview({ index }) {
           color: "#999",
           fontFamily: "'DM Sans', sans-serif"
         }}>
-          {["estudiocreativo.ai", "caborentalapp.com", ""][index]}
+          {["estudiocreativo.ai", "caborentalapp.com", "", "liquidloungeiv.com"][index]}
         </div>
       </div>
       {/* Inline mockup content */}
@@ -653,7 +656,7 @@ export default function Portfolio() {
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
-          {[t.work.p1, t.work.p2, t.work.p3].map((proj, i) => (
+          {[t.work.p1, t.work.p2, t.work.p3, t.work.p4].map((proj, i) => (
             <div
               key={i}
               ref={ref(`proj${i}`)}
