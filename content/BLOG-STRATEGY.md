@@ -57,7 +57,7 @@
 |---|-------|----------|--------|
 | P | The Complete Guide to AI Automation for Small Businesses in 2026 | pillar-page | planned |
 | 1 | 5 Ways AI Automation Saves Small Businesses 10+ Hours Per Week | how-to-guide | PUBLISHED |
-| 2 | How to Choose the Right AI Automation Tools for Your Business | comparison | planned |
+| 2 | How to Choose the Right AI Automation Tools for Your Business | comparison | PUBLISHED |
 | 3 | AI Automation vs. Hiring: When to Automate and When to Delegate | comparison | planned |
 | 4 | How Much Does AI Automation Cost for a Small Business? | faq-knowledge | planned |
 | 5 | Getting Started with Make.com: A Beginner's Automation Guide | tutorial | planned |
