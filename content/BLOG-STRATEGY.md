@@ -59,7 +59,7 @@
 | 1 | 5 Ways AI Automation Saves Small Businesses 10+ Hours Per Week | how-to-guide | PUBLISHED |
 | 2 | How to Choose the Right AI Automation Tools for Your Business | comparison | PUBLISHED |
 | 3 | AI Automation vs. Hiring: When to Automate and When to Delegate | comparison | PUBLISHED |
-| 4 | How Much Does AI Automation Cost for a Small Business? | faq-knowledge | planned |
+| 4 | How Much Does AI Automation Cost for a Small Business? | faq-knowledge | PUBLISHED |
 | 5 | Getting Started with Make.com: A Beginner's Automation Guide | tutorial | planned |
 | 6 | 7 Signs Your Business is Ready for AI Automation | listicle | planned |
 | 7 | AI Automation ROI: How to Measure What You're Saving | data-research | planned |
