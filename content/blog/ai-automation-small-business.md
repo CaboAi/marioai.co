@@ -4,6 +4,7 @@ date: "2026-03-31"
 description: "A practical guide to identifying and automating the repetitive tasks that drain your time. Real examples from businesses in Los Cabos."
 tags: ["ai-automation", "small-business", "productivity"]
 author: "Mario Polanco"
+image: "/images/blog/ai-automation-small-business-hero.png"
 ---
 
 If you're running a small business, you already know the feeling: another day spent on admin tasks instead of growing your business. Scheduling appointments, following up with leads, organizing documents, updating spreadsheets. The work never stops.
