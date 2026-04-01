@@ -4,7 +4,7 @@ date: "2026-03-31"
 description: "A no-BS guide to evaluating and selecting AI automation tools for small businesses. Compare top platforms and avoid the most common buying mistakes."
 tags: ["ai-automation", "small-business", "tools", "workflow-automation", "make-com", "zapier"]
 author: "Mario Polanco"
-image: "/images/blog/how-to-choose-ai-automation-tools-hero.jpg"
+image: "/images/blog/how-to-choose-ai-automation-tools-hero.png"
 ---
 
 Choosing the wrong AI automation tool is one of the most expensive mistakes a small business owner can make — not because the software costs a fortune, but because of the hours you'll waste setting it up, only to realize it doesn't fit how your business actually works.
