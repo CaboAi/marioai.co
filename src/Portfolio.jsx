@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const translations = {
   en: {
-    nav: { services: "Services", work: "Work", about: "About", contact: "Contact" },
+    nav: { services: "Services", work: "Work", about: "About", contact: "Contact", blog: "Blog" },
     hero: {
       tag: "AI Integrations Consultant",
       headline: "I build the systems that let your business run itself.",
@@ -38,7 +39,7 @@ const translations = {
     lang: "ES"
   },
   es: {
-    nav: { services: "Servicios", work: "Proyectos", about: "Sobre mí", contact: "Contacto" },
+    nav: { services: "Servicios", work: "Proyectos", about: "Sobre mí", contact: "Contacto", blog: "Blog" },
     hero: {
       tag: "Consultor de Integraciones con IA",
       headline: "Construyo los sistemas que hacen que tu negocio funcione solo.",
@@ -498,6 +499,7 @@ export default function Portfolio() {
           <a href="#work" className="nav-link desktop-nav-link">{t.nav.work}</a>
           <a href="#about" className="nav-link desktop-nav-link">{t.nav.about}</a>
           <a href="#contact" className="nav-link desktop-nav-link">{t.nav.contact}</a>
+          <Link to="/blog" className="nav-link desktop-nav-link">{t.nav.blog}</Link>
           <button className="lang-toggle" onClick={() => setLang(l => l === "en" ? "es" : "en")}>
             {t.lang}
           </button>
@@ -548,6 +550,14 @@ export default function Portfolio() {
               {link.label}
             </a>
           ))}
+          <Link
+            to="/blog"
+            className="nav-link"
+            onClick={() => setMobileMenuOpen(false)}
+            style={{ fontSize: 16 }}
+          >
+            {t.nav.blog}
+          </Link>
         </div>
       )}
 
